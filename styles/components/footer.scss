@@ -1,0 +1,13 @@
+.backgroundFooter {
+  @media screen and (max-width: 768px) {
+    padding: 17px 6.4% !important;
+  }
+  .textFooter {
+    @media screen and (max-width: 768px) {
+      font-size: 8px !important;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+}

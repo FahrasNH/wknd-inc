@@ -1,0 +1,17 @@
+.tipsSection {
+  @media screen and (max-width: 768px) {
+    padding-bottom: 50px !important;
+  }
+  .wrapHelp {
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+      margin-bottom: 20px !important;
+    }
+    .warpTextTips {
+      transition: 300ms;
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.5) !important;
+      }
+    }
+  }
+}

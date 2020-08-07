@@ -1,0 +1,9 @@
+.allSetSection {
+  img {
+    @media screen and (max-width: 768px) {
+      bottom: -5px !important;
+      float: unset !important;
+      position: relative !important;
+    }
+  }
+}

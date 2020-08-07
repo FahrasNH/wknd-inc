@@ -1,0 +1,45 @@
+.sectionOne {
+  @media screen and (max-width: 768px) {
+    overflow: hidden !important;
+    position: relative !important;
+  }
+  .bgPict {
+    @media screen and (max-width: 503px) {
+      width: 320% !important;
+      left: -110% !important;
+      background-size: cover;
+    }
+  }
+  .sectionOneWrap {
+    @media screen and (max-width: 768px) {
+      padding: 67px 0 0 !important;
+    }
+    .sectionTitle {
+      @media screen and (max-width: 768px) {
+        font-size: 52px !important;
+      }
+    }
+    .sectionDesc {
+      @media screen and (max-width: 768px) {
+        margin: 0 !important;
+      }
+    }
+    .goButton {
+      top: -100px;
+      cursor: pointer;
+      transition: 300ms;
+      -webkit-box-shadow: 0px 20px 30px 0px rgba(249, 131, 171, 0.5);
+      -moz-box-shadow: 0px 20px 30px 0px rgba(249, 131, 171, 0.5);
+      box-shadow: 0px 20px 30px 0px rgba(249, 131, 171, 0.5);
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        top: -105px;
+        -webkit-box-shadow: 0px 20px 30px 0px rgba(249,134,134, 0.7);
+        -moz-box-shadow: 0px 20px 30px 0px rgba(249,134,134, 0.7);
+        box-shadow: 0px 20px 30px 0px rgba(249,134,134, 0.7);
+      }
+    }
+  }
+}

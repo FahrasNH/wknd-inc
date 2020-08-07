@@ -1,0 +1,29 @@
+.sectionTestimoni {
+  .wrapSliderFlick {
+    @media screen and (max-width: 768px) {
+      width: 100% !important;
+    }
+    .sliderFlick {
+      @media screen and (max-width: 768px) {
+        width: 100% !important;
+      }
+      .eg-flick-viewport {
+        padding-left: 7% !important;
+        position: absolute !important;
+      }
+    }
+    button {
+      opacity: .35;
+      transition: 300ms;
+      &:hover {
+        opacity: 1 !important;
+      }
+      &:focus {
+        outline: none;
+      }
+      @media screen and (max-width: 768px) {
+        display: none !important;
+      }
+    }
+  }
+}

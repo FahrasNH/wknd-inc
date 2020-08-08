@@ -1,7 +1,7 @@
 import React from 'react'
 import { string, func, any } from 'prop-types'
 
-const Picture = (props) => {
+const Button = (props) => {
   const { onClick, children, href, className, ...styles } = props
 
   return (
@@ -17,12 +17,12 @@ const Picture = (props) => {
   )
 }
 
-Picture.propTypes = {
+Button.propTypes = {
   href: string,
+  onClick: func,
   children: any,
   styles: string,
   className: string,
-  onClick: func.isRequired,
 }
 
-export default Picture
+export default Button

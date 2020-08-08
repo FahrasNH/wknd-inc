@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { Text, Picture, View } from '../../atoms'
+import { Text, Picture, View, Button } from '../../atoms'
+import { Modals } from '../Modals'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 
@@ -9,6 +10,11 @@ const TipsSection = () => {
     isLoaded: false,
     items: []
   })
+  const [getTipssDetail, setTipsDetail] = useState({
+    title: '',
+    image: ''
+  })
+  const [show, setShow] = useState(false)
 
   useEffect(() => {
     const fetchTips = async () => {
@@ -82,7 +88,27 @@ const TipsSection = () => {
                 >
                   {item.title}
                 </Text>
-                <Picture source={require('../../../assets/icons/ic-next.svg')} imageName="ic-next" width="32px" height="32px" cursor="pointer" />
+                <Button
+                  padding="0"
+                  width="32px"
+                  border="none"
+                  height="32px"
+                  borderRadius="50%"
+                  onClick={() => {
+                    setShow(true)
+                    setTipsDetail({
+                      title: item.title,
+                      image: item.image
+                    })
+                  }}
+                >
+                  <Picture source={require('../../../assets/icons/ic-next.svg')} imageName="ic-next" width="32px" height="32px" cursor="pointer" imageName="ic-button"/>
+                </Button>
+                <Modals
+                  item={getTipssDetail}
+                  show={show}
+                  setShow={setShow}
+                />
               </View>
             </View>
           </div>

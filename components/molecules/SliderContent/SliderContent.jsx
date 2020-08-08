@@ -80,13 +80,18 @@ const SliderContent = () => {
                 >
                   {item.by}
                 </Text>
-                <Text
-                  color="black"
-                  fontSize="12px"
-                  position="relative"
+                <View
+                  height="52px"
+                  overflow="hidden"
                 >
-                  {item.testimony}
-                </Text>
+                  <Text
+                    color="black"
+                    fontSize="12px"
+                    position="relative"
+                  >
+                    {item.testimony}
+                  </Text>
+                </View>
               </View>
             </div>
           ))}

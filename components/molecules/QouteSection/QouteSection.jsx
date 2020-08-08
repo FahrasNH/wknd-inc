@@ -2,7 +2,7 @@ import React from 'react'
 import { Text, Picture, View } from '../../atoms'
 
 const QouteSection = () => (
-  <View classNames="qouteSection">
+  <View classNames="qouteSection" id="qouteSection">
     <Picture source={require('../../../assets/illustrations/ill-robo2.png')} imageName="ic-profile" width="159px" float="right" position="relative" />
     <Text
       color="black"

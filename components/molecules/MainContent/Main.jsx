@@ -40,7 +40,7 @@ const Header = () => (
           margin="60px auto 0"
         />
         <Button
-          onClick={() => console.log("Masuk")}
+          href="#qouteSection"
           border="0"
           color="#000"
           width="230px"

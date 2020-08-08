@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Swal from 'sweetalert2'
 import Flicking from "@egjs/react-flicking"
-import { View, Text, Picture, Button } from '../../atoms'
+import { View, Text } from '../../atoms'
 
 const SliderContent = () => {
   const [getTestimonialsData, setTestimonialsData] = useState({
@@ -10,14 +10,6 @@ const SliderContent = () => {
     isLoaded: false,
     items: []
   })
-
-  const prevImage = () => {
-    // alert("Masuk")
-  }
-
-  const nextImage = () => {
-    // alert("Masuk")
-  }
 
   useEffect(() => {
     const fetchTestimoni = async () => {
@@ -100,35 +92,6 @@ const SliderContent = () => {
           ))}
         </Flicking>
       </View>
-
-      <Button
-        top="50px"
-        right="0"
-        width="32px"
-        height="32px"
-        border="none"
-        cursor="pointer"
-        borderRadius="50%"
-        className="nextBtn"
-        position="absolute"
-        backgroundRepeat="no-repeat"
-        onClick={prevImage}
-        backgroundImage={`url(${require('../../../assets/icons/ic-next.svg')})`}
-      />
-      <Button
-        top="50px"
-        width="32px"
-        height="32px"
-        border="none"
-        cursor="pointer"
-        borderRadius="50%"
-        className="prevBtn"
-        position="absolute"
-        transform="rotate(180deg)"
-        backgroundRepeat="no-repeat"
-        onClick={nextImage}
-        backgroundImage={`url(${require('../../../assets/icons/ic-next.svg')})`}
-      />
     </View>
   )
 }

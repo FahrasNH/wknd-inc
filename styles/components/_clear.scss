@@ -3,11 +3,11 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: #EEBECE;
   font-family: 'Work Sans', sans-serif;
+  background-color: #EEBECE !important;
   a {
     color: inherit;
-    text-decoration: none;
+    text-decoration: none !important;
   }
 }
 

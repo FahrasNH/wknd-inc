@@ -1,28 +1,35 @@
 .sectionTestimoni {
-  .wrapSliderFlick {
-    @media screen and (max-width: 768px) {
-      width: 100% !important;
+  .slick-initialized {
+    top: -125px;
+    width: 600px;
+    margin: 0 auto;
+    .cardWarp {
+      margin-left: 50%;
     }
-    .sliderFlick {
-      @media screen and (max-width: 768px) {
-        width: 100% !important;
-      }
-      .eg-flick-viewport {
-        padding-left: 7% !important;
-        position: absolute !important;
+    .slick-list {
+      .slick-slide {
+        float: unset;
+        display: inline-block;
       }
     }
-    button {
-      opacity: .35;
-      transition: 300ms;
-      &:hover {
-        opacity: 1 !important;
+    .slick-next {
+      right: -50px;
+      &::before {
+        content: '→';
       }
-      &:focus {
-        outline: none;
+    }
+    .slick-prev {
+      left: -50px;
+      &::before {
+        content: '←';
       }
-      @media screen and (max-width: 768px) {
-        display: none !important;
+    }
+    .cardWarp {
+      .cardTestimonial {
+        margin: 10px;
+        padding: 20px;
+        height: 140px;
+        background-color: #FFF;
       }
     }
   }
